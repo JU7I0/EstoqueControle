@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { InfosComponent } from './infos/infos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastroComponent,
     EntrarComponent,
-    DashboardComponent
+    DashboardComponent,
+    InfosComponent
   ],
   imports: [
     BrowserModule,
