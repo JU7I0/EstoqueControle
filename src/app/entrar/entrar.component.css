@@ -38,7 +38,7 @@ h1 {
 
 
 
-.botaoCadastrar {
+.botao {
     border: 1px solid lightgray;
     border-radius: 20px 20px 20px 20px;
     background-color: #54cc05;
@@ -46,7 +46,7 @@ h1 {
     cursor: pointer;
 }
 
-.botaoCadastrar:active {
+.botao:active {
     transition: all;
     background-color: #54cc05;
     box-shadow: 0px 1px 3px 0 rgba(78, 72, 72, 0.75) inset;
