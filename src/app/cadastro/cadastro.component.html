@@ -1,10 +1,9 @@
 <div class="container-fluid d-flex vh-100">
 
-    <div class="col-sm-4 mx-auto teste1">
+    <div class="col-sm-4 mt-5 mx-auto teste1">
         <div class="container caixa-cadastro">
             <img src="../../assets/img/logo-removebg-preview.png" alt="logo" class="img row mx-auto">
-            <h1 class="text-center fonte-stl">Cadastro</h1>
-            <form>
+            <form class="mt-5">
                 <div class="mt-1">
                     <label for="usuario" class="fonte-stl">Usuário:</label>
                     <input type="text" class="form-control borda-redonda" name="nome" placeholder="Digite seu email"/>
@@ -14,6 +13,8 @@
                     <input type="text" class="form-control borda-redonda" name="nome" placeholder="Digite sua senha"/>
                 </div>
                 <div class="text-center fonte-stl botoes botaoCadastrar mt-4 p-2">Entrar</div>
+                <hr>
+                <p class="fonte-stl text-center">Não possui um conta? <a href="#">Cadastre-se.</a></p>
             </form>
         </div>
     </div>
@@ -40,7 +41,7 @@
                 </div>
                 <div class="text-center fonte-stl botoes botaoCadastrar mt-4 p-2">Cadastrar</div>
                 <hr>
-                <p class="fonte-stl text-center">Já possui uma conta? <a href="#">Então faça login.</a></p>
+                <p class="fonte-stl text-center">Já possui uma conta? <a routerLink="/entrar">Então faça login.</a></p>
             </form>
             
         </div>
