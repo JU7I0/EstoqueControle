@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
+.container-fluid {
+    background-image: url('../../assets/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-size: cover;
+    background-position: fixed;
+    margin: 0;
+    padding-top: 6vh;
+    position: fixed;
+}
+
+h1 {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: 18pt;
+}
+
+.caixa-cadastro {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background: rgba(255, 255, 255, 0.438);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(130,120,120,0.75);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    -webkit-box-shadow: 5px 5px 16px 6px rgba(130,120,120,0.75); 
+    box-shadow: 5px 5px 16px 6px rgba(130,120,120,0.75);
+}
+
+.borda-redonda {
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+
+.botaoCadastrar {
+    border: 1px solid lightgray;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #54cc05;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botaoCadastrar:active {
+    transition: all;
+    background-color: #54cc05;
+    box-shadow: 0px 1px 3px 0 rgba(78, 72, 72, 0.75) inset;
+    -webkit-box-shadow: 0px 1px 3px 0 rgba(78, 72, 72, 0.75) inset;
+    -moz-box-shadow: 0px 1px 3px 0 rgba(78, 72, 72, 0.75) inset;
+    
+}
+
+
+
+.img {
+    width: 50%;
+    height: auto;
+}
+
+.fonte-stl {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.form-control {
+    box-shadow: 0px 1px 3px 0 rgba(130,120,120,0.75) inset;
+    -webkit-box-shadow: 0px 1px 3px 0 rgba(130,120,120,0.75) inset;
+    -moz-box-shadow: 0px 1px 3px 0 rgba(130,120,120,0.75) inset;
+    
+}
+
+.teste {
+    position: fixed;
+    left: 32%;
+    animation: login 3s;
+}
+
+
+
+@keyframes login {
+    0% {
+        position: fixed;
+        left: 130%;
+    }
+    100% {
+        position: fixed;
+        left: 32%;
+    }
+}
+
+.teste1 {
+    position: fixed;
+    left: 130%;
+    animation: cadastro 3s;
+}
+
+@keyframes cadastro {
+    0% {
+        position: fixed;
+        left: 32%;
+    }
+    100% {
+        position: fixed;
+        left: -130%;
+    }
+}
