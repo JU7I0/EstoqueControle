@@ -3,12 +3,13 @@
 .container-fluid {
     background-image: url('../../assets/img/bg.jpg');
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: 100%;
     background-size: cover;
-    background-position: fixed;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding-top: 6vh;
-    position: fixed;
+    padding-bottom: 6vh;
 }
 
 h1 {
@@ -22,13 +23,13 @@ h1 {
     padding-bottom: 3vh;
     background: rgba(255, 255, 255, 0.438);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(130,120,120,0.75);
+    box-shadow: 0 4px 30px rgba(130, 120, 120, 0.75);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 
-    -webkit-box-shadow: 5px 5px 16px 6px rgba(130,120,120,0.75); 
-    box-shadow: 5px 5px 16px 6px rgba(130,120,120,0.75);
+    -webkit-box-shadow: 5px 5px 16px 6px rgba(130, 120, 120, 0.75);
+    box-shadow: 5px 5px 16px 6px rgba(130, 120, 120, 0.75);
 }
 
 .borda-redonda {
@@ -51,7 +52,7 @@ h1 {
     box-shadow: 0px 1px 3px 0 rgba(78, 72, 72, 0.75) inset;
     -webkit-box-shadow: 0px 1px 3px 0 rgba(78, 72, 72, 0.75) inset;
     -moz-box-shadow: 0px 1px 3px 0 rgba(78, 72, 72, 0.75) inset;
-    
+
 }
 
 
@@ -67,13 +68,14 @@ h1 {
 }
 
 .form-control {
-    box-shadow: 0px 1px 3px 0 rgba(130,120,120,0.75) inset;
-    -webkit-box-shadow: 0px 1px 3px 0 rgba(130,120,120,0.75) inset;
-    -moz-box-shadow: 0px 1px 3px 0 rgba(130,120,120,0.75) inset;
-    
+    box-shadow: 0px 1px 3px 0 rgba(130, 120, 120, 0.75) inset;
+    -webkit-box-shadow: 0px 1px 3px 0 rgba(130, 120, 120, 0.75) inset;
+    -moz-box-shadow: 0px 1px 3px 0 rgba(130, 120, 120, 0.75) inset;
+
 }
 
 .teste {
+    width: 100%;
     position: fixed;
     left: 32%;
     animation: login 3s;
@@ -86,6 +88,7 @@ h1 {
         position: fixed;
         left: 130%;
     }
+
     100% {
         position: fixed;
         left: 32%;
@@ -93,6 +96,7 @@ h1 {
 }
 
 .teste1 {
+    width: 100%;
     position: fixed;
     left: 130%;
     animation: cadastro 3s;
@@ -103,6 +107,7 @@ h1 {
         position: fixed;
         left: 32%;
     }
+
     100% {
         position: fixed;
         left: -130%;
@@ -110,14 +115,26 @@ h1 {
 }
 
 @media screen and (max-width: 580px) {
-  .teste1{
-    animation: none;
-    position: absolute;
-    left: 130%;
-  }
+    .teste1 {
+        animation: none;
+        position: absolute;
+        left: 130%;
+    }
 
-  .teste {
-    animation: none;
-    position: initial;
-  }
+    .teste {
+        animation: none;
+        position: initial;
+    }
+}
+
+@media  screen and (max-height: 590px) {
+    .container-fluid {
+        width: 100vw;
+        height: 150vh;
+        background-repeat: repeat-y;
+    }
+
+    .teste {
+        position: absolute;
+    }
 }

@@ -5,10 +5,11 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
-    background-position: fixed;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding-top: 6vh;
-    position: fixed;
+    padding-bottom: 6vh;
 }
 
 h1 {
@@ -74,6 +75,7 @@ h1 {
 }
 
 .teste1 {
+    width: 100%;
     position: absolute;
     left: 32%;
     animation: login 3s;
@@ -94,6 +96,7 @@ h1 {
 }
 
 .teste {
+    width: 100%;
     position: absolute;
     left: -130%;
     animation: cadastro 3s;
@@ -121,5 +124,13 @@ h1 {
     .teste1 {
         animation: none;
         position: initial;
+    }
+}
+
+@media  screen and (max-height: 590px) {
+    .container-fluid {
+        width: 100vw;
+        height: 150vh;
+        background-repeat: repeat-y;
     }
 }
