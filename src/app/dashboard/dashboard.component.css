@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
+
+
+.fundo {
+    background-image: url('../../assets/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+}
+
+.logo {
+    width: 25%;
+    height: auto;
+}
+
+.colunas {
+    height: 80vh;
+
+}
+
+
+
+
+

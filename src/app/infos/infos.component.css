@@ -1,0 +1,11 @@
+.card {
+    width: 10%;
+    height: 100%;
+    display: block;
+    margin-left: 0.5%;
+}
+
+.sessao {
+    height: 10vh;
+    margin-bottom: 1%;
+}
