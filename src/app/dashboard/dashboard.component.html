@@ -1,15 +1,46 @@
-<div class="container-fluid fundo position-absolute pt-3 pb-3">
+<div class="container-fluid fundo pt-3 pb-3">
 
-    
+    <div class="col-sm-4 mt-5 mx-auto login">
+        <div class="container caixa-cadastro">
+            <img src="../../assets/img/logo-removebg-preview.png" alt="logo" class="img row mx-auto">
+            <form class="mt-5">
+                <div class="mt-1">
+                    <label for="usuario" class="fonte-stl">Usuário:</label>
+                    <input type="text" class="form-control borda-redonda" name="nome" placeholder="Digite seu email"/>
+                </div>
+                <div class="mt-1">
+                    <label for="senha" class="fonte-stl">Senha:</label>
+                    <input type="text" class="form-control borda-redonda" name="nome" placeholder="Digite sua senha"/>
+                </div>
+                <button class="botao w-100 text-center fonte-stl mt-4 p-2" routerLink="/dashboard">Entrar</button>
+                <hr>
+                <p class="fonte-stl text-center">Não possui um conta? <a routerLink="/cadastro">Cadastre-se.</a></p>
+            </form>
+        </div>
+    </div>
+
+
     <div class="dashboard">
         <div class="container d-flex justify-content-center">
             <img src="../../assets/img/logo-removebg-preview.png" class="logo" alt="logo-removebg-preview">
         </div>
-        <app-infos></app-infos>
-        <div class="col-md-12 d-flex p-0">
-            <div class="col-md-2 bg-primary colunas"></div>
-            <div class="col-md-7 bg-success colunas"></div>
-            <div class="col-md-3 bg-warning colunas"></div>
+
+        <!-- <app-infos></app-infos> -->
+
+        <div class="col-md-12 d-flex justify-content-between p-0">
+
+            <div class="col-md-2 p-0">
+                <div class="container menu"></div>
+            </div>
+
+            <div class="col-md-7 p-0">
+                <div class="container listas"></div>
+            </div>
+
+            <div class="col-md-3 p-0">
+                <div class="container grafic"></div>
+            </div>
         </div>
     </div>
+
 </div>
